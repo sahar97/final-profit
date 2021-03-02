@@ -6,6 +6,38 @@ $(document).ready(function() {
         $("#panel").slideToggle("slow");
     });
   });
+
+
+function validate(event){
+        alert(event.target.id);
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*
   
 function Fun(value) {
 
@@ -46,9 +78,6 @@ else{
 
     break; 
 
-
-
-
     case 3:
         if (!(email.value.match(e_patt))) {
             email.classList.add('invalid')
@@ -59,12 +88,6 @@ else{
 }
 
 break;
-
-
-
-
-
-
 case 4:
     if (!(numb.value.match(n_patt))) {
         numb.classList.add('invalid')
@@ -75,19 +98,6 @@ else{
 }
 
 break;
-
-
-
-
-
-
-
-
-
-
-
-        
-
     case 5:
         if (!(com_name.value.match(com_patt))) {
             com_name.classList.add('invalid')
@@ -98,14 +108,6 @@ else{
 }
 
 break;
-
-
-
-
-
-
-
-
     case 6:
         if (!(com_web.value.match(urlRegex))) {
             com_web.classList.add('invalid')
@@ -116,19 +118,6 @@ else{
 }
 
 break; 
-
-
-
-
-
-
-
-
-
-
-    
-
-
 case 7:
   
     if (j_title.value =="" || j_title.value ==null){
@@ -138,13 +127,6 @@ case 7:
     else {    j_title.classList.remove('invalid')
 }
 break; 
-
-
-
-
-
-
-
 case 8:
   
     if ($("#select")[0].selectedIndex <= 0) {
@@ -161,11 +143,6 @@ break;
 
     }
 }
-
-
-
-
-
 /*
 function Fun() {
     
