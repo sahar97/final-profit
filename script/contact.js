@@ -9,13 +9,22 @@ $(document).ready(function() {
 
 
 function validate(event){
-        alert(event.target.id);
-
     
+
+const fields_validations = {
+    'firstName' : /^[a-zA-Z ]{2,30}$/,
+    'lastaNme' : /^[a-zA-Z ]{2,30}$/,
+    }
+var elementId=event.target.id;
+alert(elementId);
+if (elementId == fields_validations.firstName){
+    alert("true");
 }
+         else{
+             alert("false")
+         }
 
-
-
+}
 
 
 
