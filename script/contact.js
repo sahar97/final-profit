@@ -9,16 +9,22 @@ const fields_validations = {
     }
 
 function validate (event){
-    var element=event.target;
-var elementId =event.target.id;
+    element=event.target;
+       elementId=event.target.id;
+    var elementVal =event.target.value;
 
-    if ((element.value.match(fields_validations.elementId))) {
+alert("id :" + elementId);
+alert("value : " + elementVal);
+alert(fields_validations[elementId]);
 
-        elementId.classList.add('invalid')
+if (!(elementVal.match(fields_validations[elementId]))) {
+alert("false");
+document.getElementById(elementId).classList.add('invalid');
 
-    }
-else {
-    elementId.classList.remove('invalid')
 }
+else {
+    document.getElementById(elementId).classList.remove('invalid');
+}
+
 }
 
