@@ -4,6 +4,13 @@ const fields_validations = {
     }
 
 function validate (event){
-    var element=event.target.id;
-    console.log(element);
+    var element=event.target;
+
+
+    if (!(element.value.match(fields_validations.first_name))) {
+alert("true")    }
+else {
+    alert ("false ")
 }
+}
+
