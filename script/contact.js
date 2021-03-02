@@ -8,16 +8,24 @@ $(document).ready(function() {
   });
 
 
-function validate(event){
-    
 
-const fields_validations = {
-    'firstName' : /^[a-zA-Z ]{2,30}$/,
-    'lastaNme' : /^[a-zA-Z ]{2,30}$/,
-    }
-var elementId=event.target.id;
-alert(elementId);
-if (elementId == fields_validations.firstName){
+
+
+function validate(event){
+    const fields_validations = {
+        'first_name' : /^[a-zA-Z ]{2,30}$/,
+        'last_name' : /^[a-zA-Z ]{2,30}$/,
+        }
+if (elementId.value.match(fields_validations.first_name)){
+    alert("true");
+}
+         else{
+             alert("false")
+         }
+
+}
+/*
+if (elementId.value.match(fields_validations.firstName)){
     alert("true");
 }
          else{
@@ -26,7 +34,7 @@ if (elementId == fields_validations.firstName){
 
 }
 
-
+*/
 
 
 
